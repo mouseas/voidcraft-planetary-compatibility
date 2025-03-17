@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2025-03-16
+  Features:
+	- Added support for Metal and Stars
+  Bugfixes:
+	- Fixed Tenebris-related startup error when Voidcraft setting to allow directly voidcrafting science packs was enabled
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2025-03-16
+  Features:
+	- Added support for Maraxsis
+	- Added support for Tenebris-prime

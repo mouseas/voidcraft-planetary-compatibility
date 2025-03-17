@@ -1,15 +1,17 @@
 {
 	"name": "voidcraft-planetary-compatibility",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"title": "Voidcraft: Planetary Compatibility",
 	"author": "Mouseas",
 	"description": "Adds recipies and technology unlocks to Voidcraft so it can work with various planet mods.",
 	"homepage": "https://github.com/mouseas/voidcraft-planetary-compatibility",
 	"dependencies": [
-		"base >= 2.0",
+		"base >= 2.0.28",
+        "space-age >= 2.0.28",
 		"Voidcraft >= 1.4.8",
 		"? maraxsis >= 1.28.15",
-		"? tenebris_prime >= 1.3.2"
+		"? tenebris_prime >= 1.3.2",
+		"? metal-and-stars >= 0.1.7"
 	],
 	"factorio_version": "2.0"
 }

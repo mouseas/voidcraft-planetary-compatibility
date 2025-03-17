@@ -47,12 +47,6 @@ local function compatibility_recipe(xinfo, basetbl, order, energy, add_to_tech, 
 		base_item = basetbl[1]
 	end
 	
-	--[[ if fluid, because Maraxsis doesn't put fluid icons in a subfolder but voidcraft expects them to, the "/fluid" part of the icon path has to be removed.
-	if (xinfo.fluid) then
-		recipe.icons[1].icon = xinfo.prefix .. "/graphics/icons/" .. (xinfo.img or base_item) .. ".png"
-	end]]
-	
-	--recipe.name = compat_prefix .. "vc-" .. (xinfo.img or base_item)
 	return recipe
 end
 
@@ -66,7 +60,7 @@ local added_recipes = {
 
 -- voidlore
 if (VC_COMPAT.scienceCraft) then
-	table.insert(added_recipes, compatibility_recipe({prefix = m_prefix, subgroup = "voidcraft-tenebris-prime", exalted = true}, {"bioluminescent-science-pack", "quartz-crystal", "luciferin"}, "vptp-a", 720, nil, {0.4, 0.8, 0.7}))
+	table.insert(added_recipes, compatibility_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", exalted = true}, {"bioluminescent-science-pack", "quartz-crystal", "luciferin"}, "vptp-a", 720, nil, {0.4, 0.8, 0.7}))
 end
 
 -- make flux and coherence versions of the recipes
