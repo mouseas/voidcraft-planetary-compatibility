@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"title": "Voidcraft: Planetary Compatibility",
 	"author": "Mouseas",
-	"description": "This mod adds recipies and technology unlocks to Voidcraft that works with various planet mods.",
-	"contact": "Mouseas",
+	"description": "Adds recipies and technology unlocks to Voidcraft so it can work with various planet mods.",
+	"homepage": "https://github.com/mouseas/voidcraft-planetary-compatibility",
 	"dependencies": [
 		"base >= 2.0",
 		"Voidcraft >= 1.4.8",
