@@ -3,7 +3,12 @@ require "util"
 local m_prefix = "__maraxsis__"
 
 data:extend({
-	VC_COMPAT.compatibility_tech("maraxsis", {"s6x-void-vulcanus", "s6x-void-fulgora", "s6x-void-gleba", "planet-discovery-maraxsis"}, 1500, "cel")
+	-- basic Maraxsis materials
+	VC_COMPAT.compatibility_tech("maraxsis", {"s6x-void-vulcanus", "s6x-void-fulgora", "s6x-void-gleba", "planet-discovery-maraxsis"}, 1500, "cel"),
+	-- salt
+	VC_COMPAT.compatibility_tech("salt", {"mouseas-void-maraxsis", "maraxsis-hydro-plant"}, 1000, "cel"),
+	-- glass
+	VC_COMPAT.compatibility_tech("glass", {"mouseas-void-maraxsis", "maraxsis-glassworking"}, 1000, "cel"),
 })
 if (VC_COMPAT.scienceCraft) then
 	local voidlore = VOIDCRAFT.lore_voidtech("hydraulic", {"s6x-voidlore-metallurgic", "s6x-voidlore-electromagnetic", "s6x-voidlore-agricultural", "mouseas-void-maraxsis"}, 500, "cel", m_prefix)
@@ -40,12 +45,12 @@ local added_recipes = {
 	-- voidcrafting
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="sand-1"}, {"sand", "stone", "maraxsis-coral"}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="limestone-1"}, {"maraxsis-limestone", "maraxsis-coral", "sand"}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="salt-1"}, {"maraxsis-salt", "sand", "stone"}, "vpm-xb", 6, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-saline-water", "stone", "maraxsis-salt"}, "vpm-xc", 5, "mouseas-void-maraxsis", {0.22, 0.32, 0.7}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="tropical-fish"}, {"maraxsis-tropical-fish", "maraxsis-coral", "sand"}, "vpm-xd", 6, "mouseas-void-maraxsis", {0.92, 0.35, 0.1}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="glass-1"}, {"maraxsis-glass-panes", "maraxsis-salt", "sand"}, "vpm-xe", 16, "mouseas-void-maraxsis", {0.3125, 0.86, 0.9}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-atmosphere", "sand", "maraxsis-limestone"}, "vpm-xf", 32, "mouseas-void-maraxsis", {0.55, 0.72, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="coral-1"}, {"maraxsis-coral", "maraxsis-limestone", "sand"}, "vpm-xg", 2, "mouseas-void-maraxsis", {0.2, 0.61, 0.5}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-saline-water", "stone", "maraxsis-salt"}, "vpm-xb", 5, "mouseas-void-maraxsis", {0.22, 0.32, 0.7}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="tropical-fish"}, {"maraxsis-tropical-fish", "maraxsis-coral", "sand"}, "vpm-xc", 6, "mouseas-void-maraxsis", {0.92, 0.35, 0.1}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-atmosphere", "sand", "maraxsis-limestone"}, "vpm-xd", 32, "mouseas-void-maraxsis", {0.55, 0.72, 0.74}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="coral-1"}, {"maraxsis-coral", "maraxsis-limestone", "sand"}, "vpm-xe", 2, "mouseas-void-maraxsis", {0.2, 0.61, 0.5}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="glass-1"}, {"maraxsis-glass-panes", "maraxsis-salt", "sand"}, "vpm-xf", 16, "mouseas-void-glass", {0.3125, 0.86, 0.9}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="salt-1"}, {"maraxsis-salt", "sand", "stone"}, "vpm-xg", 6, "mouseas-void-salt", {0.78, 0.74, 0.74}),
 	
 }
 -- voidlore

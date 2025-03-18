@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 2025-03-17
+  Changes:
+	- Moved Maraxsis' salt and glass conjuring recipes to their own techs
+  Bugfixes:
+	- Fixed Tenebris' bioluminescent Electric Furnace not being able to smelt Prismite ore
+---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2025-03-17
   Changes:
