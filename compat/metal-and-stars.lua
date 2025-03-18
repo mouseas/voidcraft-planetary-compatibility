@@ -99,53 +99,25 @@ data:extend({
 })
 
 -- recipes
-local function compatibility_recipe(xinfo, basetbl, order, energy, add_to_tech, tinttbl)
-	local recipe = VOIDCRAFT.voidcraft_recipe(xinfo, basetbl, order, energy, add_to_tech, tinttbl)
-	
-	local base_item = nil
-	if (type(basetbl) ~= "table") then
-		base_item = basetbl
-	else
-		base_item = basetbl[1]
-	end
-	
-	-- if fluid, because Metal and Stars Graphics doesn't put fluid icons in a subfolder but voidcraft expects them to, the "/fluid" part of the icon path has to be removed.
-	if (xinfo.fluid) then
-		recipe.icons[1].icon = xinfo.prefix .. "/graphics/icons/" .. (xinfo.img or base_item) .. ".png"
-	end
-	
-	-- if it's from Common Prototypes, we need to fix the img path
-	if (xinfo.prefix == cp_gfx_prefix) then
-		if xinfo.fluid then
-			recipe.icons[1].icon = xinfo.prefix .. "/icons/fluids/" .. (xinfo.img or base_item) .. ".png"
-		else
-			recipe.icons[1].icon = xinfo.prefix .. "/icons/items/" .. (xinfo.img or base_item) .. ".png"
-		end
-	end
-	
-	return recipe
-end
-
-
 local added_recipes = {
 	-- shipyard
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", fluid = 240, secondary_item = true, img = "gray-goo"}, {"gray-goo", "nanites", "iron-ore"}, "vpmas-aa", 5, "mouseas-void-mas-shipyard", {0.7, 0.7, 0.7}),
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", img="nanites"}, {"nanites", "carbon", "iron-ore"}, "vpmas-ab", 1, "mouseas-void-mas-shipyard", {0.92, 0.92, 0.92}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", fluid = 240, secondary_item = true, icopy="fluid"}, {"gray-goo", "nanites", "iron-ore"}, "vpmas-aa", 5, "mouseas-void-mas-shipyard", {0.7, 0.7, 0.7}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", icopy = "item"}, {"nanites", "carbon", "iron-ore"}, "vpmas-ab", 1, "mouseas-void-mas-shipyard", {0.92, 0.92, 0.92}),
 	
 	-- nix
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, img = "dark-matter-gas"}, {"dark-matter-fluid", "stone", "coal"}, "vpmas-ba", 5, "mouseas-void-mas-nix", {0.9, 0.12, 0.5}),
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, img = "crude-slush"}, {"crude-slush", "ice", "coal"}, "vpmas-bb", 32, "mouseas-void-mas-nix", {0.15, 0.15, 0.15}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", img = "dark-matter-gas"}, {"dark-matter-fluid", "stone", "coal"}, "vpmas-ba", 5, "mouseas-void-mas-nix", {0.9, 0.12, 0.5}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy = "fluid"}, {"crude-slush", "ice", "coal"}, "vpmas-bb", 32, "mouseas-void-mas-nix", {0.15, 0.15, 0.15}),
 	
 	-- ringworld
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", fluid = 240, secondary_item = true, img = "heavy-water"}, {"heavy-water", "stone", "iron-ore"}, "vpmas-ca", 32, "mouseas-void-mas-ringworld", {0.5, 0.5, 0.92}),
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img="tar-1"}, {"bitumen", "bone-fragments", "carbon"}, "vpmas-cb", 6, "mouseas-void-mas-ringworld", {0.12, 0.1, 0.1}),
-	compatibility_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img="gold-ore-1"}, {"gold-ore", "silica-sand", "stone"}, "vpmas-cc", 16, "mouseas-void-mas-ringworld", {0.9, 0.8, 0.0}),
-	compatibility_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img="silica-sand-1"}, {"silica-sand", "gold-ore", "stone"}, "vpmas-cd", 16, "mouseas-void-mas-ringworld", {0.8, 0.7, 0.7}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"heavy-water", "stone", "iron-ore"}, "vpmas-ca", 32, "mouseas-void-mas-ringworld", {0.5, 0.5, 0.92}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", icopy = "item"}, {"bitumen", "bone-fragments", "carbon"}, "vpmas-cb", 6, "mouseas-void-mas-ringworld", {0.12, 0.1, 0.1}),
+	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img = "gold-ore-1", midpath = "/icons/items/"}, {"gold-ore", "silica-sand", "stone"}, "vpmas-cc", 16, "mouseas-void-mas-ringworld", {0.9, 0.8, 0.0}),
+	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img = "silica-sand-1", midpath = "/icons/items/"}, {"silica-sand", "gold-ore", "stone"}, "vpmas-cd", 16, "mouseas-void-mas-ringworld", {0.8, 0.7, 0.7}),
 	
 	-- mirandus
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", fluid = 240, secondary_item = true, img = "mirandite-sludge"}, {"mirandite-sludge", "calcite", "lithium"}, "vpmas-da", 32, "mouseas-void-mas-mirandus", {0.4, 0, 0.3}),
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", img="neodymium-ore"}, {"neodymium-ore", "lithium", "iron-ore"}, "vpmas-dd", 1, "mouseas-void-mas-mirandus", {0.92, 0.92, 0.92}),
-	compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", img="thorium"}, {"thorium", "uranium-238", "uranium-235"}, "vpmas-dc", 1, "mouseas-void-mas-mirandus", {0.3, 0.92, 0.2}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"mirandite-sludge", "calcite", "lithium"}, "vpmas-da", 32, "mouseas-void-mas-mirandus", {0.4, 0, 0.3}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", icopy = "item"}, {"neodymium-ore", "lithium", "iron-ore"}, "vpmas-dd", 1, "mouseas-void-mas-mirandus", {0.92, 0.92, 0.92}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", icopy = "item"}, {"thorium", "uranium-238", "uranium-235"}, "vpmas-dc", 1, "mouseas-void-mas-mirandus", {0.3, 0.92, 0.2}),
 }
 -- voidlore
 if (VC_COMPAT.scienceCraft) then

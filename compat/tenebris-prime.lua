@@ -37,30 +37,17 @@ data:extend({
 })
 
 -- recipes
-local function compatibility_recipe(xinfo, basetbl, order, energy, add_to_tech, tinttbl)
-	local recipe = VOIDCRAFT.voidcraft_recipe(xinfo, basetbl, order, energy, add_to_tech, tinttbl)
-	
-	local base_item = nil
-	if (type(basetbl) ~= "table") then
-		base_item = basetbl
-	else
-		base_item = basetbl[1]
-	end
-	
-	return recipe
-end
-
 local added_recipes = {
 	-- voidcrafting
-	compatibility_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", img="tenecap"}, {"tenecap", "tenecap-spore", "stone"}, "vptp-xa", 6, "mouseas-void-tenebris-prime", {0.6, 0.4, 0.4}),
-	compatibility_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", img="lucifunnel"}, {"lucifunnel", "luciferin", "lucifunnel-seed"}, "vptp-xb", 6, "mouseas-void-tenebris-prime", {0.4, 0.8, 0.7}),
-	compatibility_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", img="quartz-ore"}, {"quartz-ore", "carbon", "stone"}, "vptp-xc", 2, "mouseas-void-tenebris-prime", {0.95, 0.9, 0.9})
+	VOIDCRAFT.voidcraft_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", icopy="item"}, {"tenecap", "tenecap-spore", "stone"}, "vptp-xa", 6, "mouseas-void-tenebris-prime", {0.6, 0.4, 0.4}),
+	VOIDCRAFT.voidcraft_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", icopy="item"}, {"lucifunnel", "luciferin", "lucifunnel-seed"}, "vptp-xb", 6, "mouseas-void-tenebris-prime", {0.4, 0.8, 0.7}),
+	VOIDCRAFT.voidcraft_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", icopy="item"}, {"quartz-ore", "carbon", "stone"}, "vptp-xc", 2, "mouseas-void-tenebris-prime", {0.95, 0.9, 0.9})
 	
 }
 
 -- voidlore
 if (VC_COMPAT.scienceCraft) then
-	table.insert(added_recipes, compatibility_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", exalted = true}, {"bioluminescent-science-pack", "quartz-crystal", "luciferin"}, "vptp-a", 720, nil, {0.4, 0.8, 0.7}))
+	table.insert(added_recipes, VOIDCRAFT.voidcraft_recipe({prefix = t_prefix, subgroup = "voidcraft-tenebris-prime", exalted = true}, {"bioluminescent-science-pack", "quartz-crystal", "luciferin"}, "vptp-a", 720, nil, {0.4, 0.8, 0.7}))
 end
 
 -- make flux and coherence versions of the recipes
@@ -76,3 +63,6 @@ end
 data:extend(added_recipes)
 data:extend(fluxized_recipes)
 data:extend(coherized_recipes)
+
+-- add a flag to vanilla electric furnace so that voidcraft allows prismite smelting in the bioluminescent version of it.
+data.raw["furnace"]["electric-furnace"].allow_prismite_smelting = true
