@@ -121,10 +121,10 @@ local added_recipes = {
 }
 -- voidlore
 if (VC_COMPAT.scienceCraft) then
-	table.insert(added_recipes, compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", exalted = true}, {"nanite-science-pack", "nanites", "iron-ore"}, "vpmas-a", 300, nil, {1, 1, 1}))
-	table.insert(added_recipes, compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", exalted = true}, {"anomaly-science-pack", "ice", "coal"}, "vpmas-b", 750, nil, {1, 1, 1}))
-	table.insert(added_recipes, compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", exalted = true}, {"ring-science-pack", "gold-ore", "silica-sand"}, "vpmas-c", 750, nil, {1, 1, 0.5}))
-	table.insert(added_recipes, compatibility_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", exalted = true}, {"quantum-science-pack", "neodymium-ore", "thorium"}, "vpmas-d", 750, nil, {1, 1, 0.5}))
+	table.insert(added_recipes, VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", exalted = true}, {"nanite-science-pack", "nanites", "iron-ore"}, "vpmas-a", 300, nil, {1, 1, 1}))
+	table.insert(added_recipes, VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", exalted = true}, {"anomaly-science-pack", "ice", "coal"}, "vpmas-b", 750, nil, {1, 1, 1}))
+	table.insert(added_recipes, VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", exalted = true}, {"ring-science-pack", "gold-ore", "silica-sand"}, "vpmas-c", 750, nil, {1, 1, 0.5}))
+	table.insert(added_recipes, VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", exalted = true}, {"quantum-science-pack", "neodymium-ore", "thorium"}, "vpmas-d", 750, nil, {1, 1, 0.5}))
 end
 
 -- make flux and coherence versions of the recipes
