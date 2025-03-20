@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2025-03-20
+  Changes:
+	- Added Voidcrafting recipes to various productivity upgrades from Maraxsis, and Metal and Stars
+	- Added "space_travel_required" flag to mod info, since planets beyond Nauvis require space travel
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2025-03-19
   Bugfixes:

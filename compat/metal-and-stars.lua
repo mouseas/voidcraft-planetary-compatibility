@@ -142,3 +142,38 @@ if (#added_recipes > 0) then
 	data:extend(fluxized_recipes)
 	data:extend(coherized_recipes)
 end
+
+-- add productivity to relevant Voidcraft recipes
+if (data.raw["technology"]["bullet-productivity"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("bullet-productivity", "s6xvc-firearm-magazine", 0.1, true, true)
+	VC_COMPAT.addRecipeToProducitivityTech("bullet-productivity", "s6xvc-piercing-rounds-magazine", 0.1, true, true)
+	VC_COMPAT.addRecipeToProducitivityTech("bullet-productivity", "s6xvc-uranium-rounds-magazine", 0.1, true, true)
+end
+if (data.raw["technology"]["railgun-ammo-productivity"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("railgun-ammo-productivity", "s6xvc-railgun-ammo", 0.1, true, true)
+	VC_COMPAT.addRecipeToProducitivityTech("railgun-ammo-productivity", "s6xvc-rail", 0.1, true, true)
+end
+if (data.raw["technology"]["rocket-ammo-productivity"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("rocket-ammo-productivity", "s6xvc-rocket", 0.1, true, true)
+	VC_COMPAT.addRecipeToProducitivityTech("rocket-ammo-productivity", "s6xvc-explosive-rocket", 0.1, true, true)
+end
+if (data.raw["technology"]["space-fuel-productivity"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("space-fuel-productivity", "s6x-void-thruster-fuel", 0.1, false, false)
+end
+if (data.raw["technology"]["module-productivity-basic"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-basic", "s6x-voidcraft-eff-module", 0.1, false, false)
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-basic", "s6x-voidcraft-speed-module", 0.1, false, false)
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-basic", "s6xvc-void-eff-module", 0.1, false, true)
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-basic", "s6xvc-void-speed-module", 0.1, false, true)
+end
+if (data.raw["technology"]["module-productivity-intermediate"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-intermediate", "s6x-voidcraft-eff-module-2", 0.1, false, false)
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-intermediate", "s6x-voidcraft-speed-module-2", 0.1, false, false)
+end
+if (data.raw["technology"]["module-productivity-advanced"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-advanced", "s6x-voidcraft-eff-module-3", 0.1, false, false)
+	VC_COMPAT.addRecipeToProducitivityTech("module-productivity-advanced", "s6x-voidcraft-speed-module-3", 0.1, false, false)
+end
+
+
+

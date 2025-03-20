@@ -71,3 +71,16 @@ end
 data:extend(added_recipes)
 data:extend(fluxized_recipes)
 data:extend(coherized_recipes)
+
+-- add productivity to relevant Voidcraft recipes
+if (data.raw["technology"]["maraxsis-glass-productivity"]) then
+	if (data.raw["recipe"]["s6xvc-glass-1"]) then -- voidcraft uses the img string when naming its VC recipes...
+		VC_COMPAT.addRecipeToProducitivityTech("maraxsis-glass-productivity", "s6xvc-glass-1", 0.1, true, true)
+	elseif (data.raw["recipe"]["s6xvc-maraxsis-glass"]) then -- this is what it *should* be named.
+		VC_COMPAT.addRecipeToProducitivityTech("maraxsis-glass-productivity", "s6xvc-maraxsis-glass", 0.1, true, true)
+	end
+end
+
+if (VC_COMPAT.scienceCraft and data.raw["technology"]["maraxsis-promethium-productivity"]) then
+	VC_COMPAT.addRecipeToProducitivityTech("maraxsis-promethium-productivity", "s6xvc-promethium-science-pack", 0.1, true, true)
+end
