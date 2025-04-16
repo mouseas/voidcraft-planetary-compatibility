@@ -3,6 +3,7 @@ Version: 0.1.8
 Date: 2025-03-20
   Bugfixes:
 	- Fixed crash caused by Maraxsis internally renaming two of its resources
+	- Added Void Thruster Fuel tech as a prerequisite tech for some planets' voidcrafting techs, to match voidcraft's own behavior
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2025-03-20
