@@ -4,7 +4,7 @@ local m_prefix = "__terrapalus__"
 
 data:extend({
 	-- basic Terra Palus material. Aint' much else to add.
-	VC_COMPAT.compatibility_tech("terrapalus", {"planet-discovery-terrapalus"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("terrapalus", {"s6x-void-thruster", "planet-discovery-terrapalus"}, 500, "cel"),
 })
 
 -- recipes

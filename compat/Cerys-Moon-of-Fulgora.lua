@@ -4,7 +4,7 @@ local m_prefix = "__Cerys-Moon-of-Fulgora__"
 
 data:extend({
 	-- basic Cerys materials
-	VC_COMPAT.compatibility_tech("cerys", {"moon-discovery-cerys"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("cerys", {"s6x-void-thruster", "moon-discovery-cerys"}, 500, "cel"),
 })
 if (VC_COMPAT.scienceCraft) then
 	local voidlore = VOIDCRAFT.lore_voidtech("cerysian", {}, 500, "cel", m_prefix)

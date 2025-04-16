@@ -6,10 +6,10 @@ local m_gfx2_prefix = "__metal-and-stars-graphics-2__"
 local cp_gfx_prefix = "__common-prototypes-graphics__"
 
 data:extend({
-	VC_COMPAT.compatibility_tech("mas-shipyard", {"planet-discovery-shipyard"}, 500, "cel"),
-	VC_COMPAT.compatibility_tech("mas-nix", {"planet-discovery-nix"}, 500, "cel"),
-	VC_COMPAT.compatibility_tech("mas-ringworld", {"planet-discovery-ringworld"}, 500, "cel"),
-	VC_COMPAT.compatibility_tech("mas-mirandus", {"planet-discovery-mirandus"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("mas-shipyard", {"s6x-void-thruster", "planet-discovery-shipyard"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("mas-nix", {"s6x-void-thruster", "planet-discovery-nix"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("mas-ringworld", {"s6x-void-thruster", "planet-discovery-ringworld"}, 500, "cel"),
+	VC_COMPAT.compatibility_tech("mas-mirandus", {"s6x-void-thruster", "planet-discovery-mirandus"}, 500, "cel"),
 })
 if (VC_COMPAT.scienceCraft) then
 	local voidlore = {
