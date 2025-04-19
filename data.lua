@@ -19,5 +19,9 @@ if (mods["Cerys-Moon-of-Fulgora"]) then
 	require "compat.Cerys-Moon-of-Fulgora"
 end
 
+if (mods["castra"]) then
+	require "compat.castra"
+end
+
 
 

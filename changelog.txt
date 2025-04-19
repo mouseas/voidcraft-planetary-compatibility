@@ -1,3 +1,7 @@
+Version: 0.1.9
+Date: 2025-03-20
+  Changes:
+	- Added partial support for Castra. When combined with Age of Production, several voidcrafting recipes get removed from voidworks and added to AoP's Forge. I'm still trying to figure out how best to correct this.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2025-03-20
