@@ -1,16 +1,23 @@
+Version: 0.1.10
+Date: 2025-04-24
+  Changes:
+	- Added support for Corrundum.
+	- Added support for Modernized Loaders; T1-4 loaders can now be conjured.
+	- Added Castra's military-grade belts
+---------------------------------------------------------------------------------------------------
 Version: 0.1.9
-Date: 2025-03-20
+Date: 2025-04-16
   Changes:
 	- Added partial support for Castra. When combined with Age of Production, several voidcrafting recipes get removed from voidworks and added to AoP's Forge. I'm still trying to figure out how best to correct this.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: 2025-03-20
+Date: 2025-04-16
   Bugfixes:
 	- Fixed crash caused by Maraxsis internally renaming two of its resources
 	- Added Void Thruster Fuel tech as a prerequisite tech for some planets' voidcrafting techs, to match voidcraft's own behavior
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
-Date: 2025-03-20
+Date: 2025-03-30
   Changes:
 	- Added support for Cerys
 	- Added support for Terra Palus

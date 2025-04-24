@@ -23,5 +23,14 @@ if (mods["castra"]) then
 	require "compat.castra"
 end
 
+if (mods["corrundum"]) then
+	require "compat.corrundum"
+end
+
+if (mods["loaders-modernized"]) then
+	require "compat.loaders-modernized"
+end
+
+
 
 
