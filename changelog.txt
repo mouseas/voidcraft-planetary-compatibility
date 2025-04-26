@@ -1,7 +1,11 @@
 Version: 0.1.11
 Date: 2025-04-25
-  Changes:
+  Bugfixes:
 	- Fixed Maraxsis recipes using the wrong icon when both Maraxsis and Metal & Stars were installed.
+	- Fixed startup error when both Void Lore was enabled and one or both of Castra and/or Corrundum mod(s) were active.
+	- Added some missing translation keys
+  Changes:
+	- Cerysian void lore technology now requires Cerys voidcraft technology (and is now spelled correctly).
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 2025-04-24

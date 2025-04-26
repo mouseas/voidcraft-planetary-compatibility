@@ -9,10 +9,8 @@ data:extend({
 	VC_COMPAT.compatibility_tech("platinum-plate", {"mouseas-void-corrundum", "platinum-processing"}, 500, "cel")
 })
 if (VC_COMPAT.scienceCraft) then
-	local voidlore = {
-		VOIDCRAFT.lore_voidtech("electrochemical", {"mouseas-void-corrundum"}, 500, "cel", m_gfx_prefix)
-	}
-	data:extend(voidlore)
+	local voidlore = VOIDCRAFT.lore_voidtech("electrochemical", {"mouseas-void-corrundum"}, 500, "cel", m_prefix)
+	data:extend({ voidlore })
 end
 
 -- item subgroups

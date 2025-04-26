@@ -12,9 +12,7 @@ data:extend({
 })
 if (VC_COMPAT.scienceCraft) then
 	local voidlore = VOIDCRAFT.lore_voidtech("hydraulic", {"s6x-voidlore-metallurgic", "s6x-voidlore-electromagnetic", "s6x-voidlore-agricultural", "mouseas-void-maraxsis"}, 500, "cel", m_prefix)
-	data:extend({
-		voidlore
-	})
+	data:extend({ voidlore })
 end
 
 -- item subgroups

@@ -7,10 +7,8 @@ data:extend({
 	VC_COMPAT.compatibility_tech("cerys", {"s6x-void-thruster", "moon-discovery-cerys"}, 500, "cel"),
 })
 if (VC_COMPAT.scienceCraft) then
-	local voidlore = VOIDCRAFT.lore_voidtech("cerysian", {}, 500, "cel", m_prefix)
-	data:extend({
-		voidlore
-	})
+	local voidlore = VOIDCRAFT.lore_voidtech("cerysian", {"mouseas-void-cerys"}, 500, "cel", m_prefix)
+	data:extend({ voidlore })
 end
 
 -- item subgroups

@@ -7,9 +7,7 @@ data:extend({
 })
 if (VC_COMPAT.scienceCraft) then
 	local voidlore = VOIDCRAFT.lore_voidtech("bioluminescent", {"s6x-voidlore-metallurgic", "s6x-voidlore-electromagnetic", "s6x-voidlore-agricultural", "mouseas-void-tenebris-prime"}, 500, "cel", t_prefix)
-	data:extend({
-		voidlore
-	})
+	data:extend({ voidlore })
 end
 
 

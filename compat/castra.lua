@@ -11,10 +11,8 @@ data:extend({
 	VC_COMPAT.compatibility_tech("mg-logistics", {"military-transport-belt", "s6x-void-belts-adv"}, 1000, "cel")
 })
 if (VC_COMPAT.scienceCraft) then
-	local voidlore = {
-		VOIDCRAFT.lore_voidtech("battlefield", {"mouseas-void-castra"}, 500, "cel", m_gfx_prefix)
-	}
-	data:extend(voidlore)
+	local voidlore = VOIDCRAFT.lore_voidtech("battlefield", {"mouseas-void-castra"}, 500, "cel", m_prefix)
+	data:extend({ voidlore })
 end
 
 
