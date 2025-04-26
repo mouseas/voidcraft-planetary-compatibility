@@ -1,3 +1,8 @@
+Version: 0.1.11
+Date: 2025-04-25
+  Changes:
+	- Fixed Maraxsis recipes using the wrong icon when both Maraxsis and Metal & Stars were installed.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 2025-04-24
   Changes:

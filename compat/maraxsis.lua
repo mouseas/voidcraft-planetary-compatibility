@@ -43,14 +43,14 @@ data:extend({
 -- recipes
 local added_recipes = {
 	-- voidcrafting
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="sand-1"}, {"sand", "stone", "maraxsis-coral"}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="limestone-1"}, {"limestone", "maraxsis-coral", "sand"}, "vpm-xa", 4, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"sand", "stone", "maraxsis-coral"}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"limestone", "maraxsis-coral", "sand"}, "vpm-xa", 4, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-saline-water", "stone", "salt"}, "vpm-xb", 4, "mouseas-void-maraxsis", {0.22, 0.32, 0.7}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="tropical-fish"}, {"maraxsis-tropical-fish", "maraxsis-coral", "sand"}, "vpm-xc", 6, "mouseas-void-maraxsis", {0.92, 0.35, 0.1}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="capsule"}, {"maraxsis-tropical-fish", "maraxsis-coral", "sand"}, "vpm-xc", 6, "mouseas-void-maraxsis", {0.92, 0.35, 0.1}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-atmosphere", "sand", "limestone"}, "vpm-xd", 32, "mouseas-void-maraxsis", {0.55, 0.72, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="coral-1"}, {"maraxsis-coral", "limestone", "sand"}, "vpm-xe", 4, "mouseas-void-maraxsis", {0.2, 0.61, 0.5}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="salt-1"}, {"salt", "sand", "stone"}, "vpm-xf", 8, "mouseas-void-salt", {0.78, 0.74, 0.74}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", img="glass-1"}, {"maraxsis-glass-panes", "salt", "sand"}, "vpm-xg", 28, "mouseas-void-glass", {0.3125, 0.86, 0.9}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"maraxsis-coral", "limestone", "sand"}, "vpm-xe", 4, "mouseas-void-maraxsis", {0.2, 0.61, 0.5}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"salt", "sand", "stone"}, "vpm-xf", 8, "mouseas-void-salt", {0.78, 0.74, 0.74}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"maraxsis-glass-panes", "salt", "sand"}, "vpm-xg", 28, "mouseas-void-glass", {0.3125, 0.86, 0.9}),
 	
 }
 -- voidlore

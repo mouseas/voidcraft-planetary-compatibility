@@ -1,0 +1,22 @@
+{
+	"recipe": [
+		["s6xvc-limestone-1", "s6xvc-limestone"],
+		["s6xvc-limestone-1-flx", "s6xvc-limestone-flx"],
+		["s6xvc-limestone-1-coh", "s6xvc-limestone-coh"],
+		["s6xvc-sand-1", "s6xvc-sand"],
+		["s6xvc-sand-1-flx", "s6xvc-sand-flx"],
+		["s6xvc-sand-1-coh", "s6xvc-sand-coh"],
+		["s6xvc-tropical-fish", "s6xvc-maraxsis-tropical-fish"],
+		["s6xvc-tropical-fish-flx", "s6xvc-maraxsis-tropical-fish-flx"],
+		["s6xvc-tropical-fish-coh", "s6xvc-maraxsis-tropical-fish-coh"],
+		["s6xvc-coral-1", "s6xvc-maraxsis-coral"],
+		["s6xvc-coral-1-flx", "s6xvc-maraxsis-coral-flx"],
+		["s6xvc-coral-1-coh", "s6xvc-maraxsis-coral-coh"],
+		["s6xvc-salt-1", "s6xvc-salt"],
+		["s6xvc-salt-1-flx", "s6xvc-salt-flx"],
+		["s6xvc-salt-1-coh", "s6xvc-salt-coh"],
+		["s6xvc-glass-1", "s6xvc-maraxsis-glass-panes"],
+		["s6xvc-glass-1-flx", "s6xvc-maraxsis-glass-panes-flx"],
+		["s6xvc-glass-1-coh", "s6xvc-maraxsis-glass-panes-coh"]
+	]
+}
