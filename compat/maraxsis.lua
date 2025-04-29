@@ -39,9 +39,16 @@ data:extend({
 })
 
 -- recipes
+
+-- if Moshine isn't present, we can use a Maraxsis-specific item. If both are present, we need a junk item not specific to either.
+local sand_junk = "maraxsis-coral"
+if mods["Moshine"] then
+ sand_junk = "carbon"
+end
+
 local added_recipes = {
 	-- voidcrafting
-	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"sand", "stone", "maraxsis-coral"}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"sand", "stone", sand_junk}, "vpm-xa", 2, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="item"}, {"limestone", "maraxsis-coral", "sand"}, "vpm-xa", 4, "mouseas-void-maraxsis", {0.78, 0.74, 0.74}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"maraxsis-saline-water", "stone", "salt"}, "vpm-xb", 4, "mouseas-void-maraxsis", {0.22, 0.32, 0.7}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_prefix, subgroup = "voidcraft-maraxsis", icopy="capsule"}, {"maraxsis-tropical-fish", "maraxsis-coral", "sand"}, "vpm-xc", 6, "mouseas-void-maraxsis", {0.92, 0.35, 0.1}),

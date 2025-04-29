@@ -31,6 +31,10 @@ if (mods["loaders-modernized"]) then
 	require "compat.loaders-modernized"
 end
 
+if (mods["Moshine"]) then
+	require "compat.moshine"
+end
+
 
 
 
