@@ -35,6 +35,16 @@ if (mods["Moshine"]) then
 	require "compat.moshine"
 end
 
+if (mods["secretas"]) then
+	require "compat.secretas"
+end
+
+-- TODO
+-- Dea Dia System https://mods.factorio.com/mod/dea-dia-system
+-- Janus https://mods.factorio.com/mod/janus
+-- Lignumis https://mods.factorio.com/mod/lignumis
+-- Cubium https://mods.factorio.com/mod/cubium
+-- Factorio & Conquer https://mods.factorio.com/mod/Factorio-Tiberium
 
 
 

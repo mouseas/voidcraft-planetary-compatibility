@@ -1,0 +1,13 @@
+{
+	"recipe": [
+		["s6xvc-dark-matter-gas", "s6xvc-dark-matter-fluid"],
+		["s6xvc-dark-matter-gas-flx", "s6xvc-dark-matter-fluid-flx"],
+		["s6xvc-dark-matter-gas-coh", "s6xvc-dark-matter-fluid-coh"],
+		["s6xvc-gold-ore-1", "s6xvc-gold-ore"],
+		["s6xvc-gold-ore-1-flx", "s6xvc-gold-ore-flx"],
+		["s6xvc-gold-ore-1-coh", "s6xvc-gold-ore-coh"],
+		["s6xvc-silica-sand-1", "s6xvc-silica-sand"],
+		["s6xvc-silica-sand-1-flx", "s6xvc-silica-sand-flx"],
+		["s6xvc-silica-sand-1-coh", "s6xvc-silica-sand-coh"]
+	]
+}

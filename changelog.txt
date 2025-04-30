@@ -1,83 +1,94 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-04-30
+  Features:
+    - Added support for Secretas & Frozeta
+    - Added missing conjuring recipe for Loaders Modernized's stacking loader
+  Changes:
+    - Updated thumbnail to include more supported planets
+  Bugfixes:
+    - Fixed Gold Ore voidcrafting recipe using the wrong icon when both Secretas & Frozeta and Metal & Stars were installed.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.12
 Date: 2025-04-29
-  Changes:
-	- Added support for Moshine
+  Features:
+    - Added support for Moshine
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.11
 Date: 2025-04-25
   Bugfixes:
-	- Fixed Maraxsis recipes using the wrong icon when both Maraxsis and Metal & Stars were installed.
-	- Fixed startup error when both Void Lore was enabled and one or both of Castra and/or Corrundum mod(s) were active.
-	- Added some missing translation keys
+    - Fixed Maraxsis recipes using the wrong icon when both Maraxsis and Metal & Stars were installed.
+    - Fixed startup error when both Void Lore was enabled and one or both of Castra and/or Corrundum mod(s) were active.
+    - Added some missing translation keys
   Changes:
-	- Cerysian void lore technology now requires Cerys voidcraft technology (and is now spelled correctly).
+    - Cerysian void lore technology now requires Cerys voidcraft technology (and is now spelled correctly).
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 2025-04-24
-  Changes:
-	- Added support for Corrundum.
-	- Added support for Modernized Loaders; T1-4 loaders can now be conjured.
-	- Added Castra's military-grade belts
+  Features:
+    - Added support for Corrundum.
+    - Added support for Modernized Loaders; T1-4 loaders can now be conjured.
+    - Added Castra's military-grade belts
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 2025-04-16
-  Changes:
-	- Added partial support for Castra. When combined with Age of Production, several voidcrafting recipes get removed from voidworks and added to AoP's Forge. I'm still trying to figure out how best to correct this.
+  Features:
+    - Added partial support for Castra. When combined with Age of Production, several voidcrafting recipes get removed from voidworks and added to AoP's Forge. I'm still trying to figure out how best to correct this.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2025-04-16
   Bugfixes:
-	- Fixed crash caused by Maraxsis internally renaming two of its resources
-	- Added Void Thruster Fuel tech as a prerequisite tech for some planets' voidcrafting techs, to match voidcraft's own behavior
+    - Fixed crash caused by Maraxsis internally renaming two of its resources
+    - Added Void Thruster Fuel tech as a prerequisite tech for some planets' voidcrafting techs, to match voidcraft's own behavior
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2025-03-30
-  Changes:
-	- Added support for Cerys
-	- Added support for Terra Palus
+  Features:
+    - Added support for Cerys
+    - Added support for Terra Palus
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 2025-03-20
   Changes:
-	- Added Voidcrafting recipes to various productivity upgrades from Maraxsis, and Metal and Stars
-	- Added "space_travel_required" flag to mod info, since planets beyond Nauvis require space travel
+    - Added Voidcrafting recipes to various productivity upgrades from Maraxsis, and Metal and Stars
+    - Added "space_travel_required" flag to mod info, since planets beyond Nauvis require space travel
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2025-03-19
   Bugfixes:
-	- Fixed startup error when both Void Lore was enabled and Metal and Stars mod was active.
+    - Fixed startup error when both Void Lore was enabled and Metal and Stars mod was active.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2025-03-17
   Changes:
-	- Moved Maraxsis' salt and glass conjuring recipes to their own techs
-	- Corrected the recipe-specific colors of the glow effect on Voidforges/Voidworks on some recipes
+    - Moved Maraxsis' salt and glass conjuring recipes to their own techs
+    - Corrected the recipe-specific colors of the glow effect on Voidforges/Voidworks on some recipes
   Balance:
-	- Adjusted time costs of most recipes to better reflect Voidcraft's own recipes.
-	- Conjuring Metal and Stars' nanites now produces 10 instead of 1 per craft cycle.
+    - Adjusted time costs of most recipes to better reflect Voidcraft's own recipes.
+    - Conjuring Metal and Stars' nanites now produces 10 instead of 1 per craft cycle.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2025-03-17
   Changes:
-	- Reworked how the additional Voidcraft recipes are added to better use the Voidcraft API.
-	- Updated required versions of Voidcraft and Maraxsis
+    - Reworked how the additional Voidcraft recipes are added to better use the Voidcraft API.
+    - Updated required versions of Voidcraft and Maraxsis
   Bugfixes:
-	- Fixed Tenebris' bioluminescent Electric Furnace not being able to smelt Prismite ore
+    - Fixed Tenebris' bioluminescent Electric Furnace not being able to smelt Prismite ore
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2025-03-17
   Bugfixes:
-	- Corrected invalid Tenebris-prime dependency reference
+    - Corrected invalid Tenebris-prime dependency reference
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2025-03-16
   Features:
-	- Added support for Metal and Stars
+    - Added support for Metal and Stars
   Bugfixes:
-	- Fixed Tenebris-related startup error when Voidcraft setting to allow directly voidcrafting science packs was enabled
+    - Fixed Tenebris-related startup error when Voidcraft setting to allow directly voidcrafting science packs was enabled
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025-03-16
   Features:
-	- Added support for Maraxsis
-	- Added support for Tenebris-prime
+    - Added support for Maraxsis
+    - Added support for Tenebris-prime

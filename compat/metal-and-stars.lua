@@ -98,6 +98,10 @@ data:extend({
 	}
 })
 
+local gold_ore_junk = "silica-sand"
+if mods["secretas"] then
+	gold_ore_junk = "copper-ore"
+end
 -- recipes
 local added_recipes = {
 	-- shipyard
@@ -105,17 +109,17 @@ local added_recipes = {
 	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-shipyard", icopy = "item", amount_main=10}, {"nanites", "carbon", "iron-ore"}, "vpmas-ab", 2, "mouseas-void-mas-shipyard", {0.92, 0.92, 0.92}),
 	
 	-- nix
-	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", img = "dark-matter-gas"}, {"dark-matter-fluid", "stone", "coal"}, "vpmas-ba", 12, "mouseas-void-mas-nix", {0.38, 0.32, 0.58}),
-	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy = "fluid"}, {"crude-slush", "ice", "coal"}, "vpmas-bb", 4, "mouseas-void-mas-nix", {0.15, 0.15, 0.15}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, icopy = "fluid"}, {"dark-matter-fluid", "stone", "coal"}, "vpmas-ba", 12, "mouseas-void-mas-nix", {0.38, 0.32, 0.58}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-nix", fluid = 240, secondary_item = true, icopy = "fluid"}, {"crude-slush", "ice", "coal"}, "vpmas-bb", 4, "mouseas-void-mas-nix", {0.15, 0.15, 0.15}),
 	
 	-- ringworld
-	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", fluid = 240, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"heavy-water", "stone", "iron-ore"}, "vpmas-ca", 10, "mouseas-void-mas-ringworld", {0.5, 0.5, 0.92}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", fluid = 240, secondary_item = true, icopy="fluid"}, {"heavy-water", "stone", "iron-ore"}, "vpmas-ca", 10, "mouseas-void-mas-ringworld", {0.5, 0.5, 0.92}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-ringworld", icopy = "item"}, {"bitumen", "bone-fragments", "carbon"}, "vpmas-cb", 4, "mouseas-void-mas-ringworld", {0.12, 0.1, 0.1}),
-	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img = "gold-ore-1", midpath = "/icons/items/"}, {"gold-ore", "silica-sand", "stone"}, "vpmas-cc", 4, "mouseas-void-mas-ringworld", {0.9, 0.8, 0.0}),
-	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", img = "silica-sand-1", midpath = "/icons/items/"}, {"silica-sand", "gold-ore", "stone"}, "vpmas-cd", 4, "mouseas-void-mas-ringworld", {0.8, 0.7, 0.7}),
+	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", icopy = "item"}, {"gold-ore", gold_ore_junk, "stone"}, "vpmas-cc", 4, "mouseas-void-mas-ringworld", {0.9, 0.8, 0.0}),
+	VOIDCRAFT.voidcraft_recipe({prefix = cp_gfx_prefix, subgroup = "voidcraft-mas-ringworld", icopy = "item"}, {"silica-sand", "gold-ore", "stone"}, "vpmas-cd", 4, "mouseas-void-mas-ringworld", {0.8, 0.7, 0.7}),
 	
 	-- mirandus
-	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", fluid = 100, secondary_item = true, midpath = "/graphics/icons/", icopy="fluid"}, {"mirandite-sludge", "calcite", "lithium"}, "vpmas-da", 120, "mouseas-void-mas-mirandus", {0.4, 0, 0.3}),
+	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", fluid = 100, secondary_item = true, icopy="fluid"}, {"mirandite-sludge", "calcite", "lithium"}, "vpmas-da", 120, "mouseas-void-mas-mirandus", {0.4, 0, 0.3}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", icopy = "item"}, {"neodymium-ore", "lithium", "iron-ore"}, "vpmas-dd", 12, "mouseas-void-mas-mirandus", {0.92, 0.92, 0.92}),
 	VOIDCRAFT.voidcraft_recipe({prefix = m_gfx_prefix, subgroup = "voidcraft-mas-mirandus", icopy = "item"}, {"thorium", "uranium-238", "uranium-235"}, "vpmas-dc", 12, "mouseas-void-mas-mirandus", {0.57, 0.7, 0.35}),
 }
